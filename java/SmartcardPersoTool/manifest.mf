@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.7
+Created-By: 1.8.0_141-b15 (Oracle Corporation)
+Bundle-Name: SmartcardPersoTool
+Bundle-Version: 2.2.1
+Bundle-Date: 2017-11-16 11:35:52 IST
+Implementation-Version: 2.2.1
