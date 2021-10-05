@@ -1,0 +1,2 @@
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestToolSetup\bin\Release\SideXTestToolSetup.msi
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestToolSetup\bin\Release\SideXTestToolSetup.wixpdb

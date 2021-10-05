@@ -1,0 +1,4 @@
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SmartCardNotifications\bin\x86\Release\SmartCardNotifications.dll
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SmartCardNotifications\obj\x86\Release\SmartCardNotifications.csprojResolveAssemblyReference.cache
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SmartCardNotifications\obj\x86\Release\SmartCardNotifications.csproj.ResolveComReference.cache
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SmartCardNotifications\obj\x86\Release\SmartCardNotifications.dll

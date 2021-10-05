@@ -1,0 +1,7 @@
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestTool\App.config
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestTool\hwtoken.cap
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestTool\bin\Release\\Newtonsoft.Json.dll
+..\SD2SIM\Release\SD2SIM.dll
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestTool\SideCard_JC2_4_2R2_145_TYFONEGIDS.txt
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestTool\bin\Release\Side-XTestTool.exe
+..\SmartCardNotifications\bin\x86\Release\SmartCardNotifications.dll

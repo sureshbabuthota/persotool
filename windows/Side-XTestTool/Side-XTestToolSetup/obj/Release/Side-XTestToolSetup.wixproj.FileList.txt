@@ -1,0 +1,6 @@
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestToolSetup\bin\Release\SideXTestToolSetup.msi
+D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\Side-XTestToolSetup\bin\Release\SideXTestToolSetup.wixpdb
+obj\Release\Product.wixobj
+obj\Release\Side-XTestToolSetup.wixproj.BindContentsFileListnull.txt
+obj\Release\Side-XTestToolSetup.wixproj.BindOutputsFileListnull.txt
+obj\Release\Side-XTestToolSetup.wixproj.BindBuiltOutputsFileListnull.txt

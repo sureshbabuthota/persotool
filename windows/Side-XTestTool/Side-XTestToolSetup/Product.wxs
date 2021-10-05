@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?define Version = "1.0.0.0"?>
+<?define UpgradeCode = "7909a43a-093d-4d23-8b5e-9e0bb5acc551"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:difx='http://schemas.microsoft.com/wix/DifxAppExtension'>
+  <Product UpgradeCode="$(var.UpgradeCode)" Name="Side-XTestTool" Id="*" Version="$(var.Version)" Manufacturer="Tyfone Inc" Language="1033">
+    <Package Id="*" Manufacturer="Tyfone Inc" InstallerVersion="200" Platform="x64" Languages="1033" Compressed="yes" SummaryCodepage="1252" />
+    <WixVariable Id="WixUILicenseRtf" Value="resources\tyfone-lgpl.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="img\bannrbmp.bmp"/>
+    <WixVariable Id="WixUIDialogBmp" Value="img\dlgbmp.bmp"/>
+    <Upgrade Id='$(var.UpgradeCode)'>
+      <UpgradeVersion OnlyDetect='no' Property='OLDERFOUND'
+        Minimum='0.0.0.0' IncludeMinimum='yes'
+        Maximum='$(var.Version)' IncludeMaximum='no' />
+      <UpgradeVersion OnlyDetect='yes' Property='SELFFOUND'
+        Minimum='$(var.Version)' IncludeMinimum='yes'
+        Maximum='$(var.Version)' IncludeMaximum='yes' />
+      <UpgradeVersion OnlyDetect='yes' Property='NEWERFOUND'
+        Minimum='$(var.Version)' IncludeMinimum='no' />
+    </Upgrade>
+    <UIRef Id="WixUI_Minimal" />
+	  <UIRef Id="WixUI_ErrorProgressText" />
+    <CustomAction Id='NoDowngrade' Error='A later version of Side-XTestTool is already installed.' />
+    <CustomAction Id='AlreadyUpdated' Error='The current version of Side-XTestTool is already installed.' />
+    <InstallExecuteSequence>
+      <Custom Action='AlreadyUpdated' After='FindRelatedProducts'>SELFFOUND</Custom>
+      <Custom Action='NoDowngrade' After='FindRelatedProducts'>NEWERFOUND</Custom>
+      <RemoveExistingProducts Before="InstallInitialize" />
+    </InstallExecuteSequence>
+    <Feature Id="ProductFeature" Title="Side-XTestTool" Level="1">
+      <ComponentRef Id="SideXTestTool" />
+      <ComponentRef Id="SideXTestToolSub" />
+      <ComponentRef Id="ApplicationShortcut" />
+     <ComponentRef Id="ApplicationShortcutDesktop" />
+    </Feature>
+    <Media Id="1" Cabinet="SideXTestTool.cab" EmbedCab="yes" />
+    <Icon Id="icon64.ico" SourceFile="img\icon64.ico" />
+    <Property Id="ARPPRODUCTICON" Value="icon64.ico" />
+  </Product>
+  <Fragment>
+   <Directory Id="TARGETDIR" Name="SourceDir">
+     <Directory Id="ProgramFilesFolder">
+       <Directory Id="MyCompany" Name="Tyfone Inc">
+         <Directory Id="INSTALLFOLDER" Name="Side-XTestTool">
+         <Directory Id="ENRESOURCESFOLDER" Name="en" />
+          <Component Id="SideXTestTool" Guid="{f332c7db-7f96-4690-a2b8-99bb351d4cba}">
+              <File Id="SideXTestTool.exe"
+                    Name="$(var.Side-XTestTool.TargetFileName)"
+                    Source="$(var.Side-XTestTool.TargetPath)"
+                    Vital="yes"
+                    KeyPath="yes"
+                    DiskId="1" />   
+              <File Id="SmartCardNotifications.dll"
+                    Name="SmartCardNotifications.dll"
+                    Source="..\SmartCardNotifications\bin\x86\Release\SmartCardNotifications.dll"
+                    Vital="yes"
+                    KeyPath="no"
+                    DiskId="1" />
+            <File Id="SD2SIM.dll"
+                  Name="SD2SIM.dll"
+                  Source="..\SD2SIM\Release\SD2SIM.dll"
+                  Vital="yes"
+                  KeyPath="no"
+                  DiskId="1" />
+            <File Id="Newtonsoft.Json.dll"
+                  Name="Newtonsoft.Json.dll"
+                  Source="$(var.Side-XTestTool.TargetDir)\Newtonsoft.Json.dll"
+                  Vital="yes"
+                  KeyPath="no"
+                  DiskId="1" />
+            </Component>
+       </Directory>
+       </Directory>
+     </Directory>
+     <Directory Id="ProgramMenuFolder">
+       <Directory Id="ApplicationProgramsFolder" Name="Side-XTestTool" />
+     </Directory>
+     <Directory Id="INSTALLDIR" Name="UserDir">
+       <Directory Id="MYINSTALLFOLDER" Name="Side-XTestTool">
+         <Component Id="SideXTestToolSub" Guid="{B93BA433-922E-4FFE-AC56-672AB190A9F3}">
+           <File Id="app.config"
+                 Name="app.config"
+                 Source="$(var.Side-XTestTool.ProjectDir)App.config"
+                 Vital="yes"
+                 KeyPath="no"
+                 DiskId="1" />
+           <File Id="SideCard_JC2_4_2R2_145_TYFONEGIDS.txt"
+                 Name="SideCard_JC2_4_2R2_145_TYFONEGIDS.txt"
+                 Source="$(var.Side-XTestTool.ProjectDir)SideCard_JC2_4_2R2_145_TYFONEGIDS.txt"
+                 Vital="yes"
+                 KeyPath="no"
+                 DiskId="1" />
+           <File Id="hwtoken.cap"
+               Name="hwtoken.cap"
+               Source="$(var.Side-XTestTool.ProjectDir)hwtoken.cap"
+               Vital="yes"
+               KeyPath="no"
+               DiskId="1" />
+         </Component>
+       </Directory>
+     </Directory>
+     <Directory Id="DesktopFolder" Name="Desktop"></Directory>
+   </Directory>
+    <SetDirectory Id="INSTALLDIR" Value="[%USERPROFILE]" />
+ </Fragment>
+ <Fragment>
+   <DirectoryRef Id="ApplicationProgramsFolder">
+     <Component Id="ApplicationShortcut" Guid="{e2dd091d-a85b-411a-b542-b813b5a02844}">
+       <Shortcut Id="ApplicationStartMenuShortcut" Name="Side-XTestTool" Description="SideCard Test Tool" Target="[INSTALLFOLDER]Side-XTestTool.exe" WorkingDirectory="INSTALLFOLDER" />
+       <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+       <RegistryValue Root="HKCU" Key="Software\Side-XTestTool" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+     </Component>
+   </DirectoryRef>
+   <DirectoryRef Id="DesktopFolder">
+     <Component Id="ApplicationShortcutDesktop" Guid="{e2ff091d-a85b-411a-b542-b813b5a02833}">
+       <Shortcut Id="ApplicationDesktopShortcut" Name="Side-XTestTool" Description="SideCard Test Tool" Target="[INSTALLFOLDER]Side-XTestTool.exe" WorkingDirectory="INSTALLFOLDER" />
+       <RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+       <RegistryValue Root="HKCU" Key="Software\Side-XTestTool" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+     </Component>
+   </DirectoryRef>
+ </Fragment>
+</Wix>

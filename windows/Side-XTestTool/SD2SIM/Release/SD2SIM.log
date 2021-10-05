@@ -1,0 +1,61 @@
+﻿Build started 10-18-2019 12:52:59.
+     1>Project "D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\SD2SIM.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SD2SIM_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/vc120.pdb" /FR"Release\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SD2SIM_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/vc120.pdb" /FR"Release\\" /Gd /TP /analyze- /errorReport:prompt SD2SIM.c
+         SD2SIM.c
+     1>SD2SIM.c(44): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(59): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(140): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(439): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(446): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(447): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(570): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(579): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(459): warning C4101: 'hFile' : unreferenced local variable
+     1>SD2SIM.c(489): warning C4101: 'dwLen' : unreferenced local variable
+     1>SD2SIM.c(607): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(616): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(622): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(630): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>SD2SIM.c(642): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(777): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(783): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(803): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+     1>SD2SIM.c(810): warning C4996: 'cprintf': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _cprintf. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(123) : see declaration of 'cprintf'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\SD2SIM.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.lib" /MACHINE:X86 /SAFESEH /DLL .\Release/SD2SIM.obj
+         .\Release/StdAfx.obj
+            Creating library D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.lib and object D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.exp
+         SD2SIM.vcxproj -> D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.bsc" Release\SD2SIM.sbr Release\StdAfx.sbr
+       PostBuildEvent:
+         "C:\Program Files (x86)\Windows Kits\8.1\bin\x86\SignTool.exe" sign /f "D:\CodeSign_Certificates\ThawteCodeSign2019\TyfoneMSCodeSign.pfx" /p "tyfoneu4ia" /t http://timestamp.verisign.com/scripts/timstamp.dll D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.dll
+         :VCEnd
+         Done Adding Additional Store
+         Successfully signed: D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\Release\SD2SIM.dll
+         
+     1>Done Building Project "D:\git_repo\CSC-SERVICES\persotool\windows\Side-XTestTool\SD2SIM\SD2SIM.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.31
